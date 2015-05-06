@@ -1,0 +1,157 @@
+BODY
+{
+	BACKGROUND-COLOR: #FFFFFF;
+	BACKGROUND-IMAGE: url(<?php echo $image;?>);
+	BACKGROUND-REPEAT: NO-REPEAT;
+	BACKGROUND-POSITION: center center;
+	BACKGROUND-ATTACHMENT: fixed;
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+	FONT-SIZE: 8pt;
+	TEXT-DECORATION: none;
+	MARGIN-LEFT: 0;
+	MARGIN-TOP: 5px;
+	MARGIN-BOTTOM: 0;
+	MARGIN-RIGHT: 0;
+	SCROLLBAR-ARROW-COLOR: #000000;
+    SCROLLBAR-TRACK-COLOR: #808080;
+    SCROLLBAR-BASE-COLOR: #808080;
+	SCROLLBAR-SHADOW-COLOR: #000000;
+  	SCROLLBAR-HIGHLIGHT-COLOR: #C0C0C0;
+  	SCROLLBAR-3DLIGHT-COLOR: #C0C0C0;
+}
+FONT
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+	FONT-SIZE: 8pt;
+	TEXT-DECORATION: none;
+}
+A:link
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+	FONT-SIZE: 8pt;
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+}
+A:visited
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+	FONT-SIZE: 8pt;
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+}
+A:active
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+	FONT-SIZE: 8pt;
+	COLOR: #C0C0C0;
+	TEXT-DECORATION: none;
+}
+A:hover
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+	FONT-SIZE: 8pt;
+	COLOR: #C0C0C0;
+	TEXT-DECORATION: none;
+}
+TD
+{
+	BACKGROUND-COLOR: #FFFFFF;
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+    FONT-SIZE: 8pt;
+}
+TABLE.structure
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+	FONT-SIZE: 8pt;
+	BORDER : thin solid #000000;
+}	
+
+TD.topbar
+{
+	BACKGROUND-COLOR: #FFFFFF;
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+   	FONT-SIZE: 8pt;
+}	
+
+TD.leftbar
+{
+	BACKGROUND-COLOR: #FFFFFF;
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+    FONT-SIZE: 8pt;
+}
+
+TD.mainwin
+{
+	FONT-FAMILY: Verdana, Arial, Helvetica;
+    FONT-SIZE: 8pt;
+}
+
+.formfield
+{
+BORDER-RIGHT: #000000 1px solid;
+BORDER-TOP: #000000 1px solid;
+FONT-SIZE: 12;
+BORDER-LEFT: #000000 1px solid;
+CURSOR: auto;
+COLOR: '#000000';
+BORDER-BOTTOM: #000000 1px solid;
+FONT-FAMILY: Verdana;
+}
+.formbutton
+{
+BORDER-RIGHT: #575757 1px solid;
+BORDER-TOP: #575757 1px solid;
+FONT-SIZE: 12;
+BORDER-LEFT: #575757 1px solid;
+CURSOR: hand;
+COLOR: '#000000';
+BORDER-BOTTOM: #575757 1px solid;
+FONT-FAMILY: Verdana;
+BACKGROUND-COLOR: ''
+}
+.cal_hand
+{
+cursor: hand;
+}
+
+.textbutton
+{
+	BORDER-RIGHT: #575757 0px solid;
+	BORDER-TOP: #575757 0px solid;
+	BORDER-BOTTOM: #575757 0px solid;
+	BORDER-LEFT: #575757 0x solid;
+	FONT-SIZE: 12;
+	CURSOR: hand;
+	COLOR: #000000;
+	FONT-FAMILY: Verdana;
+	BACKGROUND-COLOR: #FFFFFF;
+}
+
+TD
+{
+	FONT-FAMILY: Verdana;
+    FONT-SIZE: 12;
+}
+TABLE.structure
+{
+	FONT-FAMILY: Verdana;
+	FONT-SIZE: 12;
+}	
+
+TD.topbar
+{
+	FONT-FAMILY: Verdana;
+   	FONT-SIZE: 12;
+}	
+
+TD.leftbar
+{
+	FONT-FAMILY: Verdana;
+    FONT-SIZE: 12;
+}
+
+TD.mainwin
+{
+	FONT-FAMILY: Verdana;
+    FONT-SIZE: 12;
+}

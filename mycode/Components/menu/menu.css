@@ -1,0 +1,56 @@
+UNKNOWN {
+	TEXT-DECORATION: none
+}
+A:visited {
+	TEXT-DECORATION: none
+}
+A:active {
+	TEXT-DECORATION: none
+}
+A:hover {
+	FONT-WEIGHT: bold;
+	TEXT-DECORATION: underline
+}
+A.negro {
+	COLOR: black
+}
+P {
+	TEXT-ALIGN: justify
+}
+.skin0 {
+	BORDER-RIGHT: black 2px solid;
+	BORDER-TOP: black 2px solid;
+	FONT-SIZE: 10px;
+	VISIBILITY: hidden;
+	BORDER-LEFT: black 2px solid;
+	WIDTH: 175px;
+	CURSOR: default;
+	LINE-HEIGHT: 15px;
+	BORDER-BOTTOM: black 2px solid;
+	FONT-FAMILY: Verdana;
+	POSITION: absolute;
+	BACKGROUND-COLOR: D8D8D8
+}
+.menuitemz {
+	PADDING-RIGHT: 10px;
+	PADDING-LEFT: 10px
+}
+BODY {
+	SCROLLBAR-FACE-COLOR: D8D8D8;
+	SCROLLBAR-HIGHLIGHT-COLOR: C0C0C0;
+	SCROLLBAR-SHADOW-COLOR: gray;
+	SCROLLBAR-3DLIGHT-COLOR: C0C0C0;
+	SCROLLBAR-ARROW-COLOR: C0C0C0;
+	SCROLLBAR-TRACK-COLOR: C0C0C0;
+	SCROLLBAR-DARKSHADOW-COLOR: black
+}
+INPUT {
+	BORDER-RIGHT: #505050 1px solid;
+	BORDER-TOP: #505050 1px solid;
+	FONT-SIZE: 11px;
+	BORDER-LEFT: #505050 1px solid;
+	COLOR: #000fff;
+	BORDER-BOTTOM: #505050 1px solid;
+	FONT-FAMILY: Verdana;
+	BACKGROUND-COLOR: #ffffff
+}

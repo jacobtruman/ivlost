@@ -1,0 +1,40 @@
+<font style='FONT-SIZE:12pt;'><b><u>Work Changes</u></b></font>
+Lotta things been happenin, work-wise.  Adam quit Datanamics, I\'m being moved at work study, I\'m getting some side web development work from Robbie... I think thats it.  Yesterday I went to the library at school after work study and didn\'t go home til about 7PM, got to bed at about 8PM, and got up at about 11PM to go to work.  Needless to say I need a little break.
+<b>Posted on: </b><font color='#FF0000' style='color:#FF0000;'>Fri Feb 25 2005 11:22:09</font> <b>By: </b><a href='users/profile.php?username=skitch' target='right'>skitch</a>
+
+
+<font style='FONT-SIZE:12pt;'><b><u>Neglect</u></b></font>
+I have been neglecting my site - no login feature yet.  I am just too busy doing fun things like calculus and economics.  Lack of sleep sure makes things better.  I think I get about as much sleep on the weekends as I do the entire week; so that means I either sleep too much on the weekends or not enough during to the week.  I'm too tired to know the difference... or care.
+<b>Posted on: </b><font color='#FF0000' style='color:#FF0000;'>Fri Feb 18 2005 9:21:23</font> <b>By: </b><a href='users/profile.php?username=skitch' target='right'>skitch</a>
+
+
+<font style='FONT-SIZE:12pt;'><b><u>School Starts</u></b></font>
+Well, school has started up.  My classes aren't too bad, so far.  Of course I have only been to each of my 4 classes once.  techniacally not even that - one of my classes the teacher didn't show up.  Anyway - in my IS class, all of our assignments are "Team" assignments.  Nobody in my group wanted to be the "Team Leader", so I volunteered.  We'll see how that class turns out.  Calculus doesn't seem so bad... yet.  Nothing else newright now.
+
+As for my website:
+Soon I will add a login functionality for the site,  so you will only have to login once (for those things that require it) for your session on the site.
+<b>Posted on: </b><font color='#FF0000' style='color:#FF0000;'>Wed Jan 19 2005 12:12:47</font> <b>By: </b><a href='users/profile.php?username=skitch' target='right'>skitch</a>
+
+
+<font style='FONT-SIZE:12pt;'><b><u>User accounts</u></b></font>
+I have finished my first revision of creating user accounts - now anyone can create an account and post comments.  I am contemplating a few different ways of doing this, so the current system may change.
+<b>Posted on: </b><font color='#FF0000' style='color:#FF0000;'>Thu Jan 13 2005 8:10:44</font> <b>By: </b><a href='users/profile.php?username=skitch' target='right'>skitch</a>
+
+
+<font style='FONT-SIZE:12pt;'><b><u>Back Home</u></b></font>
+Well, we had a good trip to Utah.  When we got home Grant dumped a bottle of Katy's Love Spell from Victorias Secret.  He smelled all girly, and so did I after cleaning it up.  Christmas was real good.  We got more than we had expected, which is always nice.  Today it rained most of the day.
+<b>Posted on: </b><font color='#FF0000' style='color:#FF0000;'>Wed Dec 29 2004 15:30:24</font> <b>By: </b><a href='users/profile.php?username=skitch' target='right'>skitch</a>
+
+
+<font style='FONT-SIZE:12pt;'><b><u>Interesting day</u></b></font>
+Well, yesterday I got my Christmas shopping done... almost.  Katy took Grant to the doctor to have a lump on his chect checked out - it turns out that he had broken his collar bone.  It does not seem to bother him, we just need to make sure he takes it easy for a little bit. I can't wait to get outa town, it's been too long since I have taken any kind of vacation.
+<b>Posted on: </b><font color='#FF0000' style='color:#FF0000;'>Thu Dec 23 2004 10:13:24</font> <b>By: </b><a href='users/profile.php?username=skitch' target='right'>skitch</a>
+
+
+<font style='FONT-SIZE:12pt;'><b><u>Christmas</u></b></font>
+It's Christmas this week and Katy and I will be heading up to Spanish Fork Utah to spend the hoiday with Katy's family. It will be good to get out of town, since I never seem to get any kind of vacation.
+<b>Posted on: </b><font color='#FF0000' style='color:#FF0000;'>Tue Dec 21 2004 11:32:16</font> <b>By: </b><a href='users/profile.php?username=skitch' target='right'>skitch</a>
+
+
+<font style='FONT-SIZE:12pt;'><b><u>My Message Board!</u></b></font>
+I now have a message board on my site. It is still in its developmental phase and will probably have many versions before I am comfortable with one. Soon I will give the functionality for anyone that visits ivlost.com

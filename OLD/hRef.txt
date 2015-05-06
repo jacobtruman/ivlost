@@ -1,0 +1,12 @@
+# CALL TO MENU: ivlost
+OnMouseOut="tHideAll();"  OnMouseOver="ShowMenu('ivlost', 76, 34, false);"
+
+# CALL TO MENU: pictures
+OnMouseOut="tHideAll();"  OnMouseOver="ShowMenu('pictures', 138, 34, false);"
+
+# CALL TO MENU: links
+OnMouseOut="tHideAll();"  OnMouseOver="ShowMenu('links', 220, 34, false);"
+
+# LOADER CODE. PLACE IT RIGHT AFTER THE <BODY> TAG
+<script language="JavaScript" src='menu.js'></script>
+

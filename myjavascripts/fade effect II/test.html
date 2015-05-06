@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>meandkatytest.jpg</title>
+<script>
+
+/*
+Gradual-Highlight Image Script II- 
+By J. Mark Birenbaum (birenbau@ugrad.cs.ualberta.ca)
+Permission granted to Dynamicdrive.com to feature script in archive
+For full source to script, visit http://dynamicdrive.com
+*/
+
+nereidFadeObjects = new Object();
+nereidFadeTimers = new Object();
+
+/* object - image to be faded (actual object, not name);
+ * destop - destination transparency level (ie 80, for mostly solid)
+ * rate   - time in milliseconds between trasparency changes (best under 100)
+ * delta  - amount of change each time (ie 5, for 5% change in transparency)
+ */
+
+function nereidFade(object, destOp, rate, delta){
+if (!document.all)
+return
+    if (object != "[object]"){  //do this so I can take a string too
+        setTimeout("nereidFade("+object+","+destOp+","+rate+","+delta+")",0);
+        return;
+    }
+        
+    clearTimeout(nereidFadeTimers[object.sourceIndex]);
+    
+    diff = destOp-object.filters.alpha.opacity;
+    direction = 1;
+    if (object.filters.alpha.opacity > destOp){
+        direction = -1;
+    }
+    delta=Math.min(direction*diff,delta);
+    object.filters.alpha.opacity+=direction*delta;
+
+    if (object.filters.alpha.opacity != destOp){
+        nereidFadeObjects[object.sourceIndex]=object;
+        nereidFadeTimers[object.sourceIndex]=setTimeout("nereidFade(nereidFadeObjects["+object.sourceIndex+"],"+destOp+","+rate+","+delta+")",rate);
+    }
+}
+
+</script>
+
+
+</head>
+<body bgcolor='#000000' leftmargin='300' topmargin='85'>
+<table border='0' cellpadding='0' cellspacing='0' width='302'>
+	<tr>
+		<td><img name='pick_r1_c1' src='pick_r1_c1.jpg' border='0' style="filter:alpha(opacity=0)" onmouseover="nereidFade(this,100,30,10)" onmouseout="nereidFade(this,0,50,1)"></td>
+	</tr>
+	<tr>
+		<td><img name='pick_r2_c1' src='pick_r2_c1.jpg' border='0' style="filter:alpha(opacity=0)" onmouseover="nereidFade(this,100,30,10)" onmouseout="nereidFade(this,0,50,1)"></td>
+	</tr>
+	<tr>
+		<td border='0'><img name='test1.jpg' src='test1.jpg' border='0' style="filter:alpha(opacity=0)" onmouseover="nereidFade(this,100,30,10)" onmouseout="nereidFade(this,0,50,1)"><img name='test2.jpg' src='test2.jpg' border='0' style="filter:alpha(opacity=0)" onmouseover="nereidFade(this,100,30,10)" onmouseout="nereidFade(this,0,50,1)"></td>
+	</tr>
+	<tr>
+		<td><img name='pick_r4_c1' src='pick_r4_c1.jpg' border='0' style="filter:alpha(opacity=0)" onmouseover="nereidFade(this,100,30,10)" onmouseout="nereidFade(this,0,50,1)"></td>
+	</tr>
+	<tr>
+		<td><img name='pick_r5_c1' src='pick_r5_c1.jpg' border='0' style="filter:alpha(opacity=0)" onmouseover="nereidFade(this,100,30,10)" onmouseout="nereidFade(this,0,50,1)"></td>
+	</tr>
+	<tr>
+		<td><img name='pick_r6_c1' src='pick_r6_c1.jpg' border='0' style="filter:alpha(opacity=0)" onmouseover="nereidFade(this,100,30,10)" onmouseout="nereidFade(this,0,50,1)"></td>
+	</tr>
+	<tr>
+		<td><img name='pick_r7_c1' src='pick_r7_c1.jpg' border='0' style="filter:alpha(opacity=0)" onmouseover="nereidFade(this,100,30,10)" onmouseout="nereidFade(this,0,50,1)"></td>
+	</tr>
+	<tr>
+		<td><img name='pick_r8_c1' src='pick_r8_c1.jpg' border='0' style="filter:alpha(opacity=0)" onmouseover="nereidFade(this,100,30,10)" onmouseout="nereidFade(this,0,50,1)"></td>
+	</tr>
+</table>
+</body>
+</html>
+
