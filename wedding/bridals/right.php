@@ -1,36 +1,28 @@
 <?php
 include('../../include.php');
 
-$pth = 'images/';
-$i = 1;
-while ($i <= $amt){
-$img = $pth.$i.'.jpg';
-$size = getimagesize ($img);
-$resizew = $size[0];
-$resizel = $size[1];
-$link["$i"] = '../pic.php?img='.$img.'&locn='.$locn.'&loc='.$loc.'&picn='.$i.'","'.$i.'","width='.$resizew.',height='.$resizel;
-$linkn["$i"] = "link".$i;
-$i++;
-}
-
-if(isset($link[$i]) and is_array($link[$i])){
-}
+$files = glob("images/*.{jpg,png,gif}", GLOB_BRACE);
 
 ?>
-<TITLE>Invitation Right Page</TITLE>
- <HEAD>
-   		<LINK REL='stylesheet' TYPE='text/css' HREF='../../stylesheets/maincss.php?file=<?php echo $file;?>'>
- </HEAD>
+<title>Invitation Right Page</title>
+<head>
+	<link rel='stylesheet' type='text/css' href='../../stylesheets/maincss.php?file=<?php echo $file; ?>'/>
+</head>
 
-	<CENTER>
-<BR>
-<?php
-echo '<B>'.$locn.'</B><BR>';
-$i = 1;
-while ($i <= $amt):
-	echo '<script language="javascript">function '.$linkn[$i].'(){window.open("'.$link[$i].',location=no,menubar=no,resizable=no,scrollbars=no,status=no,toolbar=no");}</SCRIPT>';
-	echo '<BR><a href="JavaScript: '.$linkn[$i].'()">'.$i.'</a>';
-   $i++;
-endwhile;
-?>
-</CENTER>
+<center>
+	<br/>
+	<?php
+	echo "<b>{$title}</b><br />\n";
+
+	foreach ($files as $key => $file) {
+		$file_info = pathinfo($file);
+		$size = getimagesize($file);
+		$resizew = $size[0];
+		$resizel = $size[1];
+		echo "<script language='javascript'>function link{$key}(){window.open('../pic.php?img={$file}&title={$title}&loc={$loc}&picn={$i}','{$file_info['filename']}','width={$resizew},height={$resizel},location=no,menubar=no,resizable=no,scrollbars=no,status=no,toolbar=no');}</script>
+		<br />
+		<a href='JavaScript: link{$key}()'>{$file_info['filename']}</a>\n";
+	}
+
+	?>
+</center>

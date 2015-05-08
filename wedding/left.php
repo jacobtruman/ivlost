@@ -11,22 +11,22 @@ include('../include.php');
    <B>My Wedding</B>
 					<BR>
 					<BR>
-					<a href='utahrec/mid.php?loc=utahrec&locn=Utah Reception' target='mid'>
+					<a href='utahrec/mid.php?loc=utahrec&title=Utah Reception' target='mid'>
 						Utah Reception
 					</a>
 					<BR>
 					<BR>
-					<a href='vegasrec/mid.php?loc=../wedding/vegasrec&locn=Vegas Reception&amt=4' target='mid'>
+					<a href='vegasrec/mid.php?loc=../wedding/vegasrec&title=Vegas Reception&amt=4' target='mid'>
 						Vegas Reception
 					</a>
 					<BR>
 					<BR>
-					<A HREF='invitation/mid.php?loc=invitation&locn=Invitation' target='mid'>
+					<A HREF='invitation/mid.php?loc=invitation&title=Invitation' target='mid'>
 						Invitation
 					</a>
 					<BR>
 					<BR>
-					<A HREF='bridals/mid.php?loc=bridals&locn=Bridals&amt=11' target='right'>
+					<A HREF='bridals/mid.php?loc=bridals&title=Bridals&amt=11' target='right'>
 						Bridals
 					</a>
 					<BR>
@@ -34,7 +34,7 @@ include('../include.php');
 <?php
 
 		$loc = array('saltlake');
-		$locn = array('Salt Lake');
+		$titles = array('Salt Lake');
 		$locc = count($loc);
 		$i = 0;
 		while ($i <= $locc){
@@ -71,8 +71,8 @@ include('../include.php');
 			}else{
 			}
 		$numfiles = $j;
-		echo "<a href='../pictures/midd.php?loc=".$dir."&locn=".$locn["$i"]."&amt=".$numfiles."' target='mid'>";
-		echo $locn["$i"];
+		echo "<a href='../pictures/midd.php?loc=".$dir."&title=".$titles["$i"]."&amt=".$numfiles."' target='mid'>";
+		echo $titles["$i"];
 		echo "</a>";
 		echo "<BR><BR>";
 		$i++;

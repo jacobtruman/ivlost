@@ -2,60 +2,25 @@
 include('../include.php');
 ?>
 
-<TITLE>
+<title>
 	Pictures Left Page
-</TITLE>
-<HEAD>
-	<LINK REL='stylesheet' TYPE='text/css' HREF='../stylesheets/maincss.php?file=<?php echo $file;?>'>
-</HEAD>
-<CENTER>
-	<BR>
-	<BR>
+</title>
+<head>
+	<link REL='stylesheet' TYPE='text/css' HREF='../stylesheets/maincss.php?file=<?php echo $file; ?>'/>
+</head>
+<center>
+	<br/>
+	<br/>
 	<?php
 
-		$loc = array('home', 'aim', 'meandkaty', 'family');
-		$locn = array('Home', 'AIM', 'Me and Katy', 'My Family');
-		$locc = count($loc);
-		$i = 0;
-		while ($i <= $locc){
-		$dir = $loc["$i"];
-			$j = 0;
-			$path = $dir;
-			if (file_exists($path)){
-				$dir_handle = @opendir($path) or die("Unable to open $path");
-				if (file_exists($file)){
-					$ft = filetype($file);
-				}else{
-				}
-				while ($file = readdir($dir_handle)) {
-					if ($path == '.'){
-					}else{
-						$file = $path.'/'.$file;
-						//echo $file.'<br>';
-					}
-					if (file_exists($file)){
-						$ft = filetype($file);
-					}else{
-					}
-					//echo $ft;
-					if ($ft == 'dir'){
-					}else{
-					$type = substr(strrchr("$file", "."), 1);
-						if (($type == 'jpg') || ($type == 'gif') || ($type == 'png')){
-							$j++;
-						}else{
-						}
-					}
-				}
-			closedir($dir_handle);
-			}else{
-			}
-		$numfiles = $j;
-		echo "<a href='midd.php?loc=".$dir."&locn=".$locn["$i"]."&amt=".$numfiles."' target='mid'>";
-		echo $locn["$i"];
-		echo "</a>";
-		echo "<BR><BR>";
-		$i++;
+	$locs = array('home' => 'Home', 'aim' => 'AIM', 'meandkaty' => 'Me and Katy', 'family' => 'My Family');
+
+	foreach ($locs as $dir => $title) {
+		if (file_exists($dir) && is_dir($dir)) {
+			$files = glob($dir."/*.{jpg,png,gif}", GLOB_BRACE);
 		}
+		$numfiles = count($files);
+		echo "<a href='midd.php?loc={$dir}&title={$title}&amt={$numfiles}' target='mid'>{$title}</a><br /><br />\n";
+	}
 	?>
-</CENTER>
+</center>

@@ -2,16 +2,16 @@
 include('../include.php');
 ?>
 
-<HEAD>
-	<TITLE>Pictures Main Page</TITLE>
-</HEAD>
-<FRAMESET cols='224,*' BORDER='0' BGCOLOR='C0C0C0' FRAMEBORDER='0'> 
+<head>
+	<title>Pictures Main Page</title>
+</head>
+<frameset cols='224,*' border='0' bgcolor='C0C0C0' frameborder='0'>
 	<?php
 		if ($dir != ''){
-			echo "<FRAME SRC='../pictures/".$dir."/left.php' NAME='left' SCROLLING='no' noresize>\n";
+			echo "<frame src='../pictures/".$dir."/left.php' name='left' scrolling='no' noresize />\n";
 		}else{
-			echo "<FRAME SRC='../pictures/left.php' NAME='left' SCROLLING='no' noresize>\n";
+			echo "<frame src='../pictures/left.php' name='left' scrolling='no' noresize />\n";
 		}
 	?>
- 	<FRAME SRC='mid.php' NAME='mid' SCROLLING='no' noresize> 
-</FRAMESET>
+ 	<frame src='mid.php' name='mid' scrolling='no' noresize />
+</frameset>

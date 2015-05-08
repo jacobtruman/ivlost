@@ -2,7 +2,7 @@
 include('../include.php');
 ?>
 <HTML>
-<TITLE><?php echo $locn.' - '.$name;?></TITLE>
+<TITLE><?php echo $title.' - '.$name;?></TITLE>
  <HEAD>
    		<LINK REL='stylesheet' TYPE='text/css' HREF='../stylesheets/maincss.php?file=<?php echo $file;?>'>
  </HEAD>

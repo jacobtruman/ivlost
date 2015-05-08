@@ -1,10 +1,10 @@
 <?php
 include('../include.php');
 ?>
-<HEAD>
-	<TITLE>Pictures Right Page</TITLE>
-</HEAD>
-<FRAMESET ROWS='50%,50%' BORDER='0' BGCOLOR='C0C0C0' FRAMEBORDER='0'>
- 	<FRAME SRC='lists.php?loc=<?php echo $loc."&locn=".$locn."&amt=".$amt;?>' NAME='lists' SCROLLING='no'>
-	<FRAME SRC='num.php' NAME='num' SCROLLING='no'>
-</FRAMESET>
+<head>
+	<title>Pictures Right Page</title>
+</head>
+<frameset rows='50%,50%' border='0' bgcolor='C0C0C0' frameborder='0'>
+ 	<frame src='lists.php?loc=<?php echo $loc."&title=".$title."&amt=".$amt;?>' name='lists' scrolling='no' />
+	<frame src='num.php' name='num' scrolling='no' />
+</frameset>
