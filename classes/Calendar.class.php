@@ -2,42 +2,59 @@
 
 class Calendar {
 
-	protected $_menu_items = array();
-	protected $_links = array();
-	protected $_ajax = array();
+	protected $_max_num = 59;
+	protected $_image_grid;
 
 	public function __construct() {
-		$this->_menu_items = array(
-			"Home"             => "main.php",
-			"Calvin Calendar"  => "calendar.php",
-			"Mission Pictures" => "pictures/main.php?dir=mission",
-			"Pictures"         => "pictures/main.php",
-			"My Wedding"       => "wedding/main.php",
-			"Grant"            => "pictures/main.php?dir=grant",
-			"Blog"             => "myblog/",
-			"Accounts"         => "users/",
-			"Contact Me"       => "mailme/"
-		);
-		$this->_init();
+
 	}
 
-	protected function _init() {
-		foreach ($this->_menu_items as $title => $link) {
-			$id = "nav-" . str_replace(" ", "", strtolower($title));
-			$this->_links[] = "<a id='{$id}' href='#{$id}'>{$title}</a>\n";
-			$this->_ajax[] = "$(\"#{$id}\").click(function(){
-				$.ajax({url: \"{$link}\", success: function(result){
-					$(\"#main-content\").html(result);
-				}});
-			});";
+	protected function _getNums($count = 20) {
+		$ret_val = array();
+		$i = 0;
+		while($i < $count) {
+			if(!in_array($num = $this->_getNum(), $ret_val)) {
+				$ret_val[ $i ] = $num;
+				$i++;
+			}
 		}
+		return array_chunk($ret_val, 5);
 	}
 
-	public function getLinks() {
-		return $this->_links;
+	protected function _getNum() {
+		return rand(1, $this->_max_num);
 	}
 
-	public function getAjax() {
-		return $this->_ajax;
+	public function buildImageGrid($num = 20) {
+		$num_array = $this->_getNums($num);
+		$grid = array();
+		if(isset($num_array)) {
+			$grid[] = "<div style='margin: 25px 0 35px 0;'><img src='images/calvin/candh.png'></div>";
+			$grid[] = "<div id='image-grid'>";
+			foreach($num_array as $nums) {
+				if(count($nums) == 5) {
+					$grid[] = "<div class='grid-image-row'>";
+					foreach ($nums as $num) {
+						$grid[] = "<div class='grid-image'><img src='images/calvin/little/{$num}.png'></div>";
+					}
+					$grid[] = "</div>";
+				}
+			}
+			$grid[] = "</div>";
+		}
+		$this->_image_grid = implode("\n", $grid);
+	}
+
+	public function getImageGrid() {
+		return $this->_image_grid;
+	}
+
+	public function getYearLinks($start = 2001) {
+		$links = array();
+		$end = $start + 9;
+		for($i = $start; $i <= $end; $i++) {
+			$links[] = "<a href='#cal-{$i}' id='cal-{$i}'>{$i}</a>";
+		}
+		return $links;
 	}
 }
