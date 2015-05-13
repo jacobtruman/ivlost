@@ -1,6 +1,6 @@
 <?php
 
-class Navigation {
+class Calendar {
 
 	protected $_menu_items = array();
 	protected $_links = array();

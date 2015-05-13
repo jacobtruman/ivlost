@@ -1,5 +1,5 @@
 <head>
-<link rel='stylesheet' type='text/css' href='../stylesheets/maincss.php'>
+<link rel='stylesheet' type='text/css' href='main.css'>
 </head>
 <CENTER>
 <TABLE CELLPADDING='1' CELLSPACING='1' BORDER='0' WIDTH='95%'>
