@@ -4,6 +4,6 @@ require_once("AutoLoad.php");
 
 $calendar = new Calendar();
 
-echo $calendar->getImageGrid($_REQUEST['header']);
+echo $calendar->displayMonth($_REQUEST['year'], $_REQUEST['month']);
 
 ?>

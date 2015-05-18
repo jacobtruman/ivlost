@@ -14,30 +14,30 @@ body {
 }
 
 #header {
-	padding-top:10px;
-	padding-bottom:10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	font-size: 24pt;
 	font-weight: bold;
 	text-align: center;
 }
 
 #navbar {
-	padding-top:5px;
-	padding-bottom:5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	text-align: center;
 	background-color: #68161C;
 }
 
 #main-content {
-	padding-top:5px;
-	padding-bottom:5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 #footer {
 	position: fixed;
 	bottom: 25px;
-	padding-top:5px;
-	padding-bottom:5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	width: 100%;
 	text-align: center;
 	background-color: #603910;
@@ -87,6 +87,77 @@ body {
 	padding: 5px;
 	display: table-cell;
 }
+
+.month-table {
+	display: table;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.month-td {
+	display: table-cell;
+	padding: 5px;
+}
+
+.year {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.month {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.cal-bios {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/** TABLE ITEMS BEGIN **/
+
+.css-table {
+	display: table;
+}
+
+.css-tr {
+	display: table-row;
+	border: 1px solid green;
+}
+
+.css-thead {
+	display: table-header-group;
+}
+
+.css-tbody {
+	display: table-row-group;
+}
+
+.css-tfoot {
+	display: table-footer-group;
+}
+
+.css-col {
+	display: table-column;
+}
+
+.css-colgroup {
+	display: table-column-group;
+}
+
+.css-td.css-th {
+	display: table-cell;
+}
+
+.css-caption {
+	display: table-caption;
+}
+
+/** TABLE ITEMS END **/
 
 /** TODO: UPDATE FROM HERE **/
 
