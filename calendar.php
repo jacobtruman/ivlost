@@ -1,18 +1,27 @@
 <?php
 require_once("AutoLoad.php");
 ?>
+<script language=JavaScript src="js/calendar.js" type=text/javascript></script>
 <script>
-	$(document).ready(function() {
-		$.ajax({url: "calendar_years.php", success: function(result){
-			$("#calendar-left").html(result);
-		}});
+	$(document).ready(function ()
+	{
+		$.ajax({
+			url: "calendar_years.php", success: function (result)
+			{
+				$("#calendar-left").html(result);
+			}
+		});
 		loadImageGrid();
 	});
-	function loadImageGrid(header) {
+	function loadImageGrid(header)
+	{
 		header = header || true;
-		$.ajax({url: "image_grid.php?header="+header, success: function(result){
-			$("#calendar-mid").html(result);
-		}});
+		$.ajax({
+			url: "image_grid.php?header=" + header, success: function (result)
+			{
+				$("#calendar-mid").html(result);
+			}
+		});
 	}
 </script>
 <div id="calendar-wrapper">
