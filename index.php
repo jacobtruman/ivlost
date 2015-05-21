@@ -31,15 +31,11 @@ $nav = new Navigation();
 		echo implode(" | ", $nav->getLinks());
 		?>
 	</div>
-	<div id="main-content">
-		Content...
-	</div>
+	<div id="main-content"></div>
 	<div id="footer">
 		ivlost.com Copyright &#169; 2003
 	</div>
-	<div id="footer-base">
-
-	</div>
+	<div id="footer-base"></div>
 </div>
 
 </html>
