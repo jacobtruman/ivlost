@@ -10,10 +10,10 @@ class Navigation {
 		$this->_menu_items = array(
 			"Home"             => "main.php",
 			"Calvin Calendar"  => "calendar.php",
-			"Mission Pictures" => "pictures/main.php?dir=mission",
-			"Pictures"         => "pictures/main.php",
-			"My Wedding"       => "wedding/main.php",
-			"Grant"            => "pictures/main.php?dir=grant",
+			"Mission Pictures" => "pictures.php?dir=mission",
+			"Gallery"         => "pictures.php?dir=gallery",
+			"My Wedding"       => "pictures.php?dir=wedding",
+			"Grant"            => "pictures.php?dir=grant",
 			"Blog"             => "myblog/",
 			"Accounts"         => "users/",
 			"Contact Me"       => "mailme/"
